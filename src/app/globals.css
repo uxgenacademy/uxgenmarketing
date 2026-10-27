@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+:root {
+  --background: #FFFBEB;
+  --foreground: #101828;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Helvetica Neue", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FFFBEB;
+  color: #101828;
+}
+
+body {
+  background-color: #FFFBEB;
+  color: #475467;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #F59E0B;
+  color: #000000;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8E7;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2D9C8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+/* Amber text gradient */
+.amber-gradient-text {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Warm Dots Pattern */
+.bg-warm-dots {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(217, 119, 6, 0.12) 1.2px, transparent 1.2px);
+}
+
+/* Subtle Grid Pattern for Dark Sections */
+.bg-grid-dark {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
