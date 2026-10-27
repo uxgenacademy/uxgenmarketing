@@ -1,7 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    unoptimized: true,
-  },
-}
-module.exports = nextConfig
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  // yahan kuch extra add karne ki zarurat nahi
+};
+
+export default nextConfig;
